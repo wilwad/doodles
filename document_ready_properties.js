@@ -47,9 +47,9 @@ $(document).ready(function(){
    code = doc_ready[idx];
    
    if (!code.ran){
+       code.ran = true;
        $('body').append("<script type='text/javascript'>"+ code +"</script>");
        console.table(code);
-       code.ran = true;
    }
  }
 });
